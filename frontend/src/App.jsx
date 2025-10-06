@@ -2,14 +2,18 @@ import MovieCard from "./components/MovieCard";
 import "./App.css";
 
 function App() {
+
+  const movieNumber = 1;
   return (
     <>
-      <MovieCard
-        movie={{
-          title: "Inception",
-          release_date: "2010",
-        }}
-      />
+      {movieNumber == 1 && (
+        <MovieCard
+          movie={{
+            title: "The Dark Knight",
+            release_date: "2008",
+          }}
+        />
+      )}
     </>
   );
 }
